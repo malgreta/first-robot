@@ -1,0 +1,194 @@
+body {
+	background-color: #EBEBEB;
+}
+
+h1, footer {
+	text-align: center;
+	font-family: 'Baloo Tamma 2', cursive;
+}
+
+footer {
+   /*position: fixed;*/  // this is fun, but a little bother in here
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgba(177, 93, 117, 0.5);
+   color: white;
+   text-align: center;
+   margin-top: 20px;
+}
+
+.android,
+.antena,
+.pointer,
+.sticker,
+.head,
+.eyes,
+.left_eye,
+.right_eye,
+.upper_body,
+.torso,
+.heart,
+.left_arm,
+.right_arm,
+.lower.body,
+.left_leg,
+.right_leg,
+
+.robots {
+	cursor: pointer;
+}
+
+.pointer {
+	margin: 0 auto;
+	width: 25px;
+	height: 25px;
+	background: #A2415D;
+	border-radius: 50%;
+ 	transition: background-color 0.5s ease;
+ 	background-color: #A2415D;
+}
+
+.pointer:hover {
+	background-color: #E9D7DC;
+	transform: scale(2); 
+}
+
+.sticker {
+	margin: 0 auto;
+	width: 5px;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 100px solid #A2415D;
+}
+
+.head {
+	margin: 0 auto; 
+	width: 200px; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 5px;
+	background: #A2415D; 
+	transition: all 1s;
+}
+
+.head:hover {
+	width: 250px;
+}
+
+.eyes {
+	background-color: none;
+}
+
+.left_eye, .right_eye {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.left_eye {
+	position: relative;
+	top: 100px;
+	left: 40px;
+	-webkit-animation: blink 3s infinite; 
+}
+
+.right_eye {
+	position: relative;
+	top: 80px;
+	left: 140px; 
+	-webkit-animation: blink 4s infinite; 
+}
+
+@-webkit-keyframes blink {
+    0%, 100% {
+        transform: scale(1, .05);
+    }
+    5%, 95% {
+        transform: scale(1, 1);
+    }
+}
+
+.upper_body {
+	display: flex;
+	justify-content: center;
+}
+
+.left_arm, .right_arm { 
+	width: 40px;
+	height: 125px;
+	background: #A2415D;
+	border-radius: 15px;
+	margin-top: 10px;
+}
+
+.left_arm {
+	margin-right: 5px;
+	transform-origin: right top;
+ 	transition: transform 1.5s;
+}
+
+.left_arm:hover {
+	transform: rotate(150deg);
+
+}
+
+.torso {
+	width: 200px;
+	height: 180px;
+	background: #A2415D;
+	border-radius: 0 0 20px 20px;
+	transition: background-color 1s ease;
+ 	background-color: #A2415D;
+}
+
+.torso:hover {
+	background-color: #E9D7DC;
+}
+
+.right_arm {
+	margin-left: 5px;
+	transform-origin: left top;
+ 	transition: transform 1s;
+}
+
+.right_arm:hover {
+	transform: rotate(-150deg);
+
+}
+
+.lower_body {
+	display: flex;
+	justify-content: center;
+}
+
+.left_leg, .right_leg {
+	width: 40px;
+	height: 110px;
+	background: #A2415D;
+	border-radius: 0 0 15px 15px;
+}
+
+.left_leg {
+	margin-top: 5px;
+	margin-right: 10px;
+	transform-origin: left top;
+ 	transition: transform 0.5s;
+}
+
+.right_leg {
+	margin-top: 5px;
+	margin-left: 10px; 
+	transform-origin: right top;
+ 	transition: transform 0.5s;
+}
+
+.left_leg:hover {
+	transform: rotate(15deg);
+}
+
+.right_leg:hover {
+	transform: rotate(-15deg);
+}
